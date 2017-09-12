@@ -66,11 +66,11 @@ function AskNumeric(){
         document.getElementById("result").value = 10.31-offset;
         }else
         if (sell.checked==true & adverse.checked==true) {
-            if((actualask+offset)>=10.01){
+            if((actualask-offset)<=10.01){
                 document.getElementById("result").value = 10.31-offset;
             }
             else
-                document.getElementById("result").value = actualask+offset; 
+                document.getElementById("result").value = actualask-offset; 
         }
         
 }
